@@ -1,0 +1,274 @@
+/* ==== FONDO SOLO PARA SECCIÓN INICIO ==== */
+#inicio {
+  background-image: url('../img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+#inicio::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: -1;
+}
+
+/* Fondo general (sin imagen ahora) */
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 100px;
+}
+
+/* Scroll suave para anclas */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Resto del CSS no se ha tocado, continúa tal cual: */
+
+.titulo-certificados {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 25px 15px;
+  border-radius: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(270deg, #ff5733, #ffc300, #28a745, #17a2b8, #6610f2);
+  background-size: 1000% 100%;
+  animation: brillaFondo 10s linear infinite;
+}
+
+.titulo-certificados h1 {
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  background: none;
+  -webkit-text-fill-color: initial;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+}
+
+.frase-espectacular {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  font-style: italic;
+  letter-spacing: 1.2px;
+  animation: brilloFrase 6s ease-in-out infinite;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titulo-brillante {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  background: linear-gradient(270deg, #ff5733, #ffc300, #28a745, #17a2b8, #6610f2);
+  background-size: 1000% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: brillaTexto 8s linear infinite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.seccion-botones {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 30px 0;
+  border-radius: 12px;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.icono-boton {
+  width: 280px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.icono-boton:hover {
+  transform: scale(1.05);
+}
+
+.cuadro-img {
+  width: 380px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.cuadro-img:hover {
+  transform: scale(1.05);
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f8f9fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #25d366;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-icon {
+  width: 32px;
+  height: 32px;
+  filter: invert(1);
+}
+
+@keyframes brillaTexto {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes brillaFondo {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes brilloFrase {
+  0%, 100% {
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8), 0 0 10px #28a745;
+  }
+  50% {
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.9), 0 0 20px #17a2b8;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-certificados {
+    padding: 15px 10px;
+  }
+
+  .titulo-certificados h1 {
+    font-size: 24px;
+  }
+
+  .frase-espectacular {
+    font-size: 16px;
+  }
+
+  .titulo-brillante {
+    font-size: 20px;
+  }
+
+  .icono-boton, .cuadro-img {
+    width: 90%;
+    height: auto;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* 👇 CLASE AGREGADA para cambiar fuente y separar del contenido */
+.titulo-consulta {
+  font-family: 'Times New Roman', Times, serif !important;
+  font-size: 44px !important;
+  margin-bottom: 40px; /* separación añadida entre el título y las imágenes */
+}
+
+/* 🎯 NUEVO: Mostrar texto centrado en imagen al hacer hover */
+.hover-info {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-info .hover-text {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000; /* ✅ fondo negro opaco */
+  color: white;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hover-info:hover .hover-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ✅ NUEVO: Fondo negro para textos como "Asistente Contable" */
+.cargo-fondo-negro {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 6px;
+  display: inline-block;
+}

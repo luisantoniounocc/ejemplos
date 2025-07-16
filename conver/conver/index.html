@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conver Perú</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .titulo-certificados {
+      margin-top: 70px !important;
+    }
+
+    .seccion-botones {
+      margin-top: -20px !important;
+    }
+
+    .titulo-consulta {
+      font-family: 'Times New Roman', Times, serif !important;
+      font-size: 48px !important;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .hover-info {
+      position: relative;
+      display: inline-block;
+    }
+
+    .hover-info .hover-text {
+      visibility: hidden;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      text-align: center;
+      border-radius: 8px;
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      bottom: 110%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 260px;
+      font-size: 14px;
+    }
+
+    .hover-info:hover .hover-text {
+      visibility: visible;
+    }
+
+    .hover-text a {
+      color: white !important;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .hover-text a:hover {
+      text-decoration: underline;
+      color: #ffc107;
+    }
+
+    .fondo-certificados {
+      background-image: url('img/fondo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 100px 0 60px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#inicio">
+        <img src="img/logo.png" alt="Logo ConverPerú" width="40" height="40" class="me-2">
+        CONVERPERÚ
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">INICIO</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificados">CURSOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">QUIÉNES SOMOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">AULA VIRTUAL</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">CONTACTO</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Título principal con fondo -->
+  <section id="inicio" class="fondo-certificados text-center">
+    <div class="titulo-certificados">
+      <h1 class="titulo-brillante text-white">"BIENVENIDO A CONVER PERÚ – FORMANDO TU FUTURO HOY"</h1>
+      <p class="frase-sub frase-espectacular">🌱 Tu crecimiento comienza con una decisión. Estudia con Conver Perú. 📚✨</p>
+    </div>
+  </section>
+
+  <!-- Sección INICIO (vacía) -->
+  <section class="pt-5">
+    <div class="seccion-botones">
+      <div class="container text-center">
+        <!-- Íconos eliminados según solicitud -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección CERTIFICADOS -->
+  <section id="certificados" class="pt-5">
+    <div class="container text-center mt-5">
+      <h1 class="titulo-consulta titulo-brillante text-white">CONSULTAR CERTIFICADOS EMITIDOS</h1>
+    </div>
+
+    <div class="container text-center">
+      <div class="d-flex justify-content-center flex-wrap gap-4 mb-5">
+        <a href="https://docs.google.com/spreadsheets/d/1L7iQin_XFeuednXHOQSImUkjs1YMRT3zW17G3q7MF-Y/edit?usp=sharing" target="_blank">
+          <img src="img/consulto.png" alt="Cuadro 1" class="cuadro-img">
+        </a>
+        <a href="https://docs.google.com/spreadsheets/d/1xy_4EmfNLxpGQWorX4vH_hqJEbPnPskMWqklmZdyKs0/edit?usp=sharing" target="_blank">
+          <img src="img/consulto2.png" alt="Cuadro 2" class="cuadro-img">
+        </a>
+        <a href="https://docs.google.com/spreadsheets/d/1a4TfUfZF-DK6AoG0smuyXhGVV5MVtqQeqx5RUPR4vKk/edit?usp=sharing" target="_blank">
+          <img src="img/consulto3.png" alt="Cuadro 3" class="cuadro-img">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURSOS Y PROGRAMAS -->
+  <section id="certificados" class="pt-5">
+    <div class="container text-center mt-5">
+      <h1 class="titulo-consulta titulo-brillante text-white">CURSOS Y PROGRAMAS A TU DISPOSICION</h1>
+    </div>
+
+    <div class="container text-center">
+      <div class="d-flex justify-content-center flex-wrap gap-4 mb-5">
+        <div class="hover-info">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modalContable">
+            <img src="img/item.png" alt="Cuadro 1" class="cuadro-img">
+          </a>
+          <div class="hover-text">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalContable">Asistente Contable</a>, 
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalAdministrativo">Asistente Administrativo</a>, 
+            <a href="asistente-secretarial.html" target="_blank">Asistente Secretarial</a>, 
+            <a href="analista-credito.html" target="_blank">Analista de Crédito</a>
+          </div>
+        </div>
+
+        <div class="hover-info">
+          <a href="#">
+            <img src="img/item2.png" alt="Cuadro 2" class="cuadro-img">
+          </a>
+        </div>
+
+        <div class="hover-info">
+          <a href="#">
+            <img src="img/item3.png" alt="Cuadro 3" class="cuadro-img">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Asistente Contable -->
+  <div class="modal fade" id="modalContable" tabindex="-1" aria-labelledby="modalContableLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalContableLabel">Asistente Contable</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="img/asistente-contable.jpg" alt="Asistente Contable" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Asistente Administrativo -->
+  <div class="modal fade" id="modalAdministrativo" tabindex="-1" aria-labelledby="modalAdministrativoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAdministrativoLabel">Asistente Administrativo</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="img/asistente-administrativo.jpg" alt="Asistente Administrativo" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/51971892626?text=Hola%2C%20deseo%20saber%20más%20sobre%20Conver%20Perú" 
+     class="whatsapp-float" 
+     target="_blank" 
+     title="Contáctanos por WhatsApp">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
